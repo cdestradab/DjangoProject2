@@ -7,7 +7,11 @@
 </head>
 <body>
     <h1>VARIABLE.HTML</h1>
-    <h2>Su primer nombre fué {{first_name | lower | capfirst}}, y su apellido era {{last_name}}</h2>
-    <h2>{{some_list.0}}</h2>
+    
+    {% if user_logged_in %}
+    <h1>Welcome back, you are logged in!</h1>
+    
+    {% endif %}
+
 </body>
 </html>
