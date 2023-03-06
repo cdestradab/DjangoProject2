@@ -1,7 +1,10 @@
 {% extends 'base.html' %}
+{% load static %} <!--esto cargará la librería static para poder usarla-->
 
 {% block content %}
 
 <h1>THIS IS INSIDE THE BLOCK IN THE EXAMPLE.HTML</h1>
+
+<img src="{% static 'my_app/eltopo.jpg' %}" alt='una imagen del topo'/>
 
 {% endblock content %}
